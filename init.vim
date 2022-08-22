@@ -1,13 +1,11 @@
 lua require('basic')
 
-lua require('plugins')
+lua require('plugin_manage')
 
-lua require('plugin-config.nvim-tree')
+lua require('ui')
 
-lua require('plugin-config.which-key')
+lua require('util')
 
-lua require('plugin-config.lualine')
-
-lua require('plugin-config.bufferline')
+lua require('language_support')
 
 colorscheme kanagawa
