@@ -57,4 +57,8 @@ return require('packer').startup(function(use)
 	use { 'hrsh7th/nvim-cmp' }
 
 	use { 'hrsh7th/vim-vsnip' }
+
+	use { 'skywind3000/asyncrun.vim' }
+
+	use { 'skywind3000/asynctasks.vim' }
 end)
