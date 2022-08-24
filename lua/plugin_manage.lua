@@ -17,6 +17,8 @@ return require('packer').startup(function(use)
 	-- Theme
 	use { "rebelot/kanagawa.nvim" }
 
+	use ({ 'projekt0n/github-nvim-theme' })
+
 	-- Search
 	use {
 		'nvim-telescope/telescope.nvim', tag = '0.1.0',
@@ -61,4 +63,13 @@ return require('packer').startup(function(use)
 	use { 'skywind3000/asyncrun.vim' }
 
 	use { 'skywind3000/asynctasks.vim' }
+
+	use { 'nvim-telescope/telescope-project.nvim' }
+
+	-- Git
+	use { 'lewis6991/gitsigns.nvim' }
+
+	use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
+
 end)
+
