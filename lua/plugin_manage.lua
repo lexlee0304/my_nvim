@@ -15,7 +15,7 @@ return require('packer').startup(function(use)
 	}
 
 	-- Theme
-	use { "rebelot/kanagawa.nvim" }
+	use 'folke/tokyonight.nvim'
 
 	use ({ 'projekt0n/github-nvim-theme' })
 
