@@ -2,7 +2,7 @@ lua require('basic')
 
 lua require('plugin_manage')
 
-colorscheme tokyonight
+colorscheme github_dark
 
 lua require('ui')
 

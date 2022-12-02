@@ -8,6 +8,7 @@ wk.register({
 		name = "file", -- optional group name
 		f = { "<cmd>Telescope find_files<cr>", "Find File" }, -- create a binding with label
 		r = { "<cmd>Telescope oldfiles<cr>", "Open Recent File"},
+		g = { "<cmd>Telescope live_grep<cr>", "Live Grep"},
 		t = { "<cmd>NvimTreeToggle<cr>", "Toggle Nvim Tree" },
 		p = { "<cmd>lua require'telescope'.extensions.project.project{ base_dirs = { '~/.config/nvim', '~/workspace/ByteRTC_main' } }<cr>", "Telescope project" }
 	},
@@ -22,5 +23,11 @@ wk.register({
 		dt = { "<cmd>DiffviewToggleFiles<cr>", "Diffview Files Toggle" },
 		dx = { "<cmd>DiffviewClose<cr>" , "Diffview Files Close" },
 		dc = { "<cmd>Gitsigns diffthis<cr>", "Gitsigns diffthis" },
+		s = {"<cmd>lua require('telescope.builtin').git_status()<cr>", "Git Status"},
+		l = {"<cmd>lua require('telescope.builtin').git_commits()<cr>", "Git commits"}
+	},
+	l = {
+		r = { "<cmd>lua require('telescope.builtin').lsp_references()<cr>", "lsp references"},
+		d = { "<cmd>lua require('telescope.builtin').lsp_definitions()<cr>", 'lsp definitions'},
 	}
 }, { prefix = "<leader>" })

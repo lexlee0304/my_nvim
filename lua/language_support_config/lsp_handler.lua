@@ -28,6 +28,6 @@ lsp_handler.on_attach = function (client, buf)
 	lsp_keymap_binding(buf)	
 end
 
-lsp_handler.capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+lsp_handler.capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
 
 return lsp_handler
