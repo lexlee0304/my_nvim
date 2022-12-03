@@ -1,3 +1,6 @@
+set autoread
+au FocusGained * :checktime
+
 lua require('basic')
 
 lua require('plugin_manage')
