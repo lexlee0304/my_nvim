@@ -1,4 +1,10 @@
 local wk = require("which-key")
+local Terminal  = require('toggleterm.terminal').Terminal
+local lazygit = Terminal:new({ cmd = "lazygit", hidden = true, direction = "float"})
+
+function _lazygit_toggle()
+  lazygit:toggle()
+end
 
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
@@ -18,7 +24,7 @@ wk.register({
 	},
 	g = {
 		name = 'git',
-		g = { "<cmd>FloatermNew --autoclose=1.0 --width=1.0 --height=1.0 lazygit<cr>", "Open lazygit" },
+		g = { "<cmd>lua _lazygit_toggle()<cr>", "Toggle lazygit" },
 		df = { "<cmd>DiffviewFileHistory<cr>", "Diffview FileHistory" },
 		dt = { "<cmd>DiffviewToggleFiles<cr>", "Diffview Files Toggle" },
 		dx = { "<cmd>DiffviewClose<cr>" , "Diffview Files Close" },
