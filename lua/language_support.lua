@@ -27,3 +27,13 @@ require("mason-lspconfig").setup_handlers {
 		require("rust-tools").setup {}
 	end
 }
+
+vim.diagnostic.config({
+	virtual_text = {
+		severity=vim.diagnostic.severity.ERROR,
+	},
+	severity_sort = true,
+	float = {
+		source = "always",
+	},
+})

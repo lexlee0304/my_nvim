@@ -30,10 +30,12 @@ wk.register({
 		dx = { "<cmd>DiffviewClose<cr>" , "Diffview Files Close" },
 		dc = { "<cmd>Gitsigns diffthis<cr>", "Gitsigns diffthis" },
 		s = {"<cmd>lua require('telescope.builtin').git_status()<cr>", "Git Status"},
-		l = {"<cmd>lua require('telescope.builtin').git_commits()<cr>", "Git commits"}
+		l = {"<cmd>lua require('telescope.builtin').git_commits()<cr>", "Git commits"},
 	},
 	l = {
 		r = { "<cmd>lua require('telescope.builtin').lsp_references()<cr>", "lsp references"},
 		d = { "<cmd>lua require('telescope.builtin').lsp_definitions()<cr>", 'lsp definitions'},
-	}
+		e = { "<cmd>lua require('telescope.builtin').diagnostics()<cr>", 'lsp diagnostics'},
+	},
+	u = {"<cmd>:checktime<cr>", "update buffer"},
 }, { prefix = "<leader>" })

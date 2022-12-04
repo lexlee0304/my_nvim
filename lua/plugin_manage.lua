@@ -19,9 +19,23 @@ return require('packer').startup(function(use)
 
 	use ({ 'projekt0n/github-nvim-theme' })
 
+	use {
+		'shaunsingh/nord.nvim',
+		commit = "78f5f001709b5b321a35dcdc44549ef93185e024",
+	}
+
+	use 'navarasu/onedark.nvim'
+
+	use({ 'rose-pine/neovim' })
+
 	-- Search
 	use {
 		'nvim-telescope/telescope.nvim', tag = '0.1.0',
+		requires = { {'nvim-lua/plenary.nvim'} }
+	}
+
+	use {
+		'jose-elias-alvarez/null-ls.nvim',
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
 
@@ -84,6 +98,11 @@ return require('packer').startup(function(use)
 		end,
 	})
 
+    -- Auto Pair
+	use {
+		"windwp/nvim-autopairs",
+		config = function() require("nvim-autopairs").setup {} end
+	}
 
 end)
 
