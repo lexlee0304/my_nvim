@@ -1,4 +1,6 @@
 set autoread
+inoremap jk <esc>
+tnoremap <esc> <C-\><C-n><Cmd>ToggleTerm direction='float'<Cr>
 au FocusGained * :checktime
 
 lua require('basic')

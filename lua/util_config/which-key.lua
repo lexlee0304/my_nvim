@@ -20,7 +20,7 @@ wk.register({
 	},
 	t = {
 		name = 'terminal',
-		t = { "<cmd>FloatermToggle<cr>", "Toggle Floaterm" },
+		t = { "<cmd>ToggleTerm direction='float'<cr>", "Toggle Floaterm" },
 	},
 	g = {
 		name = 'git',
