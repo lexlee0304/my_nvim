@@ -18,6 +18,8 @@ return require('packer').startup(function(use)
 	use 'folke/tokyonight.nvim'
 
 	use ({ 'projekt0n/github-nvim-theme' })
+	use 'doums/darcula'
+	use {'nyoom-engineering/oxocarbon.nvim'}
 
 	use {
 		'shaunsingh/nord.nvim',
@@ -81,6 +83,8 @@ return require('packer').startup(function(use)
 	use { 'skywind3000/asynctasks.vim' }
 
 	use { 'nvim-telescope/telescope-project.nvim' }
+
+	use { "nvim-telescope/telescope-file-browser.nvim" }
 
 	-- Git
 	use { 'lewis6991/gitsigns.nvim' }
