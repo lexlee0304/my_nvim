@@ -48,7 +48,7 @@ wk.register({
 	j = {
 		j = { "<c-u>", "page up" },
 	},
-	d = {
-		d = { "<c-d>", "pading down"},
+	k = {
+		k = { "<c-d>", "pading down"},
 	}
 }, { prefix = "<leader>" })
