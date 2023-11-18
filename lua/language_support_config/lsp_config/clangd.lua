@@ -1,7 +1,6 @@
 return {
 	cmd = {
 		"clangd",
-		"--compile-commands-dir='build'",
 		"--background-index",
 		"--clang-tidy",
 		"--function-arg-placeholders",

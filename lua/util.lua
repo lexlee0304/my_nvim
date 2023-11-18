@@ -10,3 +10,5 @@ require('util_config.nvim-treesitter')
 require('util_config.gitsigns')
 
 require('util_config.diffview')
+
+require("util_config.cmake-tool")

@@ -18,11 +18,13 @@ wk.register({
 		s = { "<cmd>lua require('telescope.builtin').grep_string()<cr>", "grep string" },
 		t = { "<cmd>NvimTreeToggle<cr>", "Toggle Nvim Tree" },
 		p = { "<cmd>lua require'telescope'.extensions.project.project{ display_type='full', sync_with_nvim_tree = true }<cr>",
-			"Telescope project" }
+			"Telescope project" };
+		b = { "<cmd>Telescope buffers<cr>", "list buffers"};
+		c = { "<cmd>Telescope commands<cr>", "commands"}
 	},
 	t = {
 		name = 'terminal',
-		t = { "<cmd>ToggleTerm direction='vertical'<cr>", "Toggle Floaterm" },
+		t = { "<cmd>ToggleTerm direction='vertical' size=80<cr>", "Toggle Floaterm" },
 		r = { "<cmd>ToggleTermSendCurrentLine<cr>", "ToggleTermSendCurrentLine" },
 	},
 	g = {
@@ -44,6 +46,8 @@ wk.register({
 	w = {
 		h = { "<c-w>h", "window left" },
 		l = { "<c-w>l", "window right" },
+		["<"] = {"<cmd>vertival res-10<cr>"},
+		[">"] = {"<cmd>vertival res+10<cr>"}
 	},
 	j = {
 		j = { "<c-u>", "page up" },

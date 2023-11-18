@@ -86,6 +86,8 @@ return require('packer').startup(function(use)
 
 	use { "nvim-telescope/telescope-file-browser.nvim" }
 
+	use { 'onsails/lspkind-nvim' }
+
 	-- Git
 	use { 'lewis6991/gitsigns.nvim' }
 
@@ -107,6 +109,8 @@ return require('packer').startup(function(use)
 		"windwp/nvim-autopairs",
 		config = function() require("nvim-autopairs").setup {} end
 	}
+
+	use 'Civitasv/cmake-tools.nvim'	
 
 end)
 

@@ -13,4 +13,4 @@ lua require('util')
 
 lua require('language_support')
 
-colorscheme oxocarbon 
+colorscheme github_dark 
